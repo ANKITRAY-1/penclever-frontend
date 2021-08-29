@@ -13,19 +13,19 @@ export const Topnav = () => {
     <div>
       <div className="header">
         <img src={logo} style={{width:"300px",height:"60px",padding:"0px",}} />
-        <div className="header-right"><a href="#.html">Contribute a article today!</a></div>
+        <div className="header-right"><a href="/signin">Contribute a article today!</a></div>
 
         <div className="topnavx" id="myTopnavx">
-          <a className="activex" href="home.html">Home</a>
+          <a className="activex" href="/">Home</a>
 
-          <a href="Science.html">SCIENCE</a>
-          <a href="Technology.html">TECHNOLOGY</a>
-          <a href="Nature.html">NATURE</a>
-          <a href="People.html">PEOPLE</a>
-          <a href="History.html">HISTORY</a>
-          <a href="Defence.html">DEFENCE</a>
-          <a href="Politics.html">POLITICS</a>
-          <a href="Sports.html">SPORTS</a>
+          <a href="/scince">SCIENCE</a>
+          <a href="/technology">TECHNOLOGY</a>
+          <a href="/nature">NATURE</a>
+          <a href="/people">PEOPLE</a>
+          <a href="/history">HISTORY</a>
+          <a href="/defence">DEFENCE</a>
+          <a href="/politics">POLITICS</a>
+          <a href="/sports">SPORTS</a>
 
           <div className="dropdownx">
             <button className="dropbtnx">MORE</button>
