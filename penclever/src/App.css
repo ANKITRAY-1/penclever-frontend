@@ -33,7 +33,7 @@
   height: 150px;
   width: 150px;
   border-radius: 10px;
-  border: 2px solid rgb(0, 225, 255);
+  border: 2px solid #f58634;
   animation-name: loder;
   animation-duration: 15s;
   animation-iteration-count: infinite;
@@ -86,6 +86,7 @@ body {
   display: block;
   overflow: auto;
   font-size: 15px;
+  text-align: left;
 }
 .date{
   background-color: white;
@@ -104,9 +105,10 @@ body {
 .catgirise{
   background-color: red;
   color: #f2f2f2;
-  opacity: 0.5;
-  padding-left: 2px;
+  opacity: 0.7;
+  padding: 2px 10px;
   float: left;
+  width: fit-content;
 }
 .parastyle{
   font-size: 22px;
@@ -140,7 +142,8 @@ body {
 .header {
   overflow: hidden;
   background-color: white;
-  padding: opx;
+  padding: 10px 0px;
+  box-shadow: 8px;
 }
 
 .header a {
@@ -168,6 +171,9 @@ body {
       float: none;
       display: block;
       text-align: left;
+  }
+  .header img{
+    float: left;
   }
 
   .header-right {
@@ -226,46 +232,17 @@ body {
 }
 
 .footer {
+  height: 60px;
   opacity: 0.9;
   width: 100%;
   margin: 30px 0px 0px 0px;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
 }
-
-.fa {
-  padding: 10px;
-  font-size: 20px;
-  width: 40px;
-  text-align: center;
-  text-decoration: none;
-  margin: 15px 10px;
-  border-radius: 50%;
+.icon{
+  line-height: 60px;
+  padding: 15px;
+  z-index: 99;
 }
-
-.fa:hover {
-  opacity: 0.7;
-}
-
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-}
-
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-}
-
-.fa-linkedin {
-  background: #007bb5;
-  color: white;
-}
-
-.fa-youtube {
-  background: #bb0000;
-  color: white;
-}
-
 .pagination a {
   color: black;
   padding: 8px 16px;
@@ -280,105 +257,6 @@ body {
 
 .pagination a:hover:not(.active) {
   background-color: #ff9999;
-}
-
-.navbar {
-  overflow: hidden;
-  background-image: url();
-  bottom: 0;
-  width: 100%;
-}
-
-.navbar a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 22px;
-  text-decoration: none;
-  font-size: 24px;
-}
-
-.navbar a:hover {
-  background-color: #ff8080;
-  color: black;
-}
-
-.navbar a.active {
-  color: white;
-}
-
-.navbar.responsive a {
-  float: none;
-  display: block;
-  text-align: left;
-}
-
-@media screen and (max-width:600px) {
-  .navbar a {
-      float: none;
-      display: block;
-      text-align: left;
-  }
-}
-
-.columnar {
-  float: left;
-  padding: 10px;
-}
-
-.columnar.side {
-  width: 12.5%;
-}
-
-.columnar.middle {
-  width: 75%;
-}
-
-.rowar:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-@media screen and (max-width: 600px) {
-
-  .columnar.side,
-  .columnar.middle {
-      width: 100%;
-  }
-}
-
-.columnk {
-  float: left;
-  padding: 10px;
-}
-
-.columnk.side {
-  width: 12.5%;
-}
-
-.columnk.middle1 {
-  width: 50%;
-}
-
-.columnk.middle2 {
-  width: 25%;
-}
-
-.rowk:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-@media screen and (max-width: 600px) {
-
-  .columnk.side,
-  .columnk.middle1,
-  .columnk.middle2 {
-      width: 100%;
-  }
 }
 
 .topnavx {

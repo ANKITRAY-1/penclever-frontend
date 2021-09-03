@@ -72,12 +72,12 @@ class LoginForm extends React.Component {
                       >
                         sign in
                       </button>
-                      <a
+                      <button
                         className="d-block text-center mt-2 small"
                         onClick={(e) => this.props.display_form("signup")}
                       >
                         register
-                      </a>
+                      </button>
                       <hr className="my-4" />
                     </form>
                   </div>

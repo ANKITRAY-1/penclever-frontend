@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 /*import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
 import NavDropdown from 'react-bootstrap/NavDropdown';
@@ -6,17 +6,34 @@ import Nav from 'react-bootstrap/Nav';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import FormControl from 'react-bootstrap/FormControl';*/
-import logo from '../img/logo1.png'
+import logo from "../img/logo1.png";
 
 export const Topnav = () => {
+  function Topnav(e) {
+    e.preventDefault();
+    var x = document.getElementById("myTopnavx");
+    if (x.className === "topnavx") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnavx";
+    }
+  }
   return (
     <div>
       <div className="header">
-        <img src={logo} style={{width:"300px",height:"60px",padding:"0px",}} />
-        <div className="header-right"><a href="/signin">Contribute a article today!</a></div>
+        <img
+          src={logo}
+          alt="logo"
+          style={{ width: "300px", height: "60px", padding: "0px" }}
+        />
+        <div className="header-right">
+          <a href="/signin">Contribute a article today!</a>
+        </div>
 
         <div className="topnavx" id="myTopnavx">
-          <a className="activex" href="/">Home</a>
+          <a className="activex" href="/">
+            Home
+          </a>
 
           <a href="/scince">SCIENCE</a>
           <a href="/technology">TECHNOLOGY</a>
@@ -30,16 +47,20 @@ export const Topnav = () => {
           <div className="dropdownx">
             <button className="dropbtnx">MORE</button>
             <div className="dropdownx-contentx">
-              <a href="Miscellaneous.html">MORE</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
+              <a href="/Miscellaneous.html">MORE</a>
+              <a href="/#">Link 2</a>
+              <a href="/#">Link 3</a>
             </div>
           </div>
-
+          <a
+          href="javascriptvoid(0)"
+          className="icon"
+          onClick={Topnav}
+        >
+          &#9776;
+        </a>
         </div>
-
       </div>
-
 
       {/*<Navbar bg="dark" variant="dark" expand="lg">
   <Container>
@@ -70,5 +91,5 @@ export const Topnav = () => {
   </Container>
     </Navbar>*/}
     </div>
-  )
-}
+  );
+};

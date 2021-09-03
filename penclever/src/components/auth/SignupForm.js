@@ -89,12 +89,12 @@ class SignupForm extends React.Component {
                       >
                         register
                       </button>
-                      <a
+                      <button
                         className="d-block text-center mt-2 small"
                         onClick={(e) => this.props.display_form("login")}
                       >
                         login
-                      </a>
+                      </button>
                       <hr className="my-4" />
                     </form>
                   </div>
