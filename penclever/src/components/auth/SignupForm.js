@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 class SignupForm extends React.Component {
   state = {
     username: "",
+    name: "",
     password: "",
     email: "",
   };
@@ -21,7 +22,93 @@ class SignupForm extends React.Component {
   render() {
     return (
       <div>
-        <div className="signinwrapper">
+        <div className="login-box">
+          <h2>Signup</h2>
+          <form onSubmit={(e) => this.props.handle_signup(e, this.state)}>
+            <div className="user-box">
+              <input
+                type="text"
+                id="inputUserame"
+                className="form-control"
+                required
+                autofocus
+                name="username"
+                value={this.state.username}
+                onChange={this.handle_change}
+              />
+              <label>Username</label>
+            </div>
+
+            <div className="user-box">
+              <input
+                type=""
+                id="inputEmail"
+                className="form-control"
+                required
+                autofocus
+                name="email"
+                value={this.state.email}
+                onChange={this.handle_change}
+              />
+              <label>Email</label>
+            </div>
+            <div className="user-box">
+              <input
+                type="text"
+                id="name"
+                className="form-control"
+                required
+                autofocus
+                name="name"
+                value={this.state.name}
+                onChange={this.handle_change}
+              />
+              <label>Name</label>
+            </div>
+            <div className="user-box">
+              <input
+                type="password"
+                id="inputPassword"
+                className="form-control"
+                required
+                autofocus
+                name="password"
+                value={this.state.password}
+                onChange={this.handle_change}
+              />
+              <label>Password</label>
+            </div>
+            <div className="user-box">
+              <input
+                type="password"
+                id="inputconfirmpassword"
+                className="form-control"
+                required
+                autofocus
+                name="confirmpassword"
+                value={this.state.confirmpassword}
+                onChange={this.handle_change}
+              />
+              <label>Confirm Password</label>
+            </div>
+            <button
+              type="submit"
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              Submit
+            </button>
+          </form>
+          <span
+            className="d-block text-center mt-2 small"
+            onClick={(e) => this.props.display_form("login")}
+          >
+            Alredly have an account? Login
+          </span>
+        </div>
+        {/* <div className="signinwrapper">
           <div className="container">
             <div className="row">
               <div className="col-lg-10 col-xl-9 mx-auto">
@@ -89,12 +176,12 @@ class SignupForm extends React.Component {
                       >
                         register
                       </button>
-                      <a
+                      <button
                         className="d-block text-center mt-2 small"
                         onClick={(e) => this.props.display_form("login")}
                       >
                         login
-                      </a>
+                      </button>
                       <hr className="my-4" />
                     </form>
                   </div>
@@ -102,7 +189,7 @@ class SignupForm extends React.Component {
               </div>
             </div>
           </div>
-        </div>
+        </div>*/}
       </div>
     );
   }

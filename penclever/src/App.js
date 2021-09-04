@@ -4,6 +4,7 @@ import { Viewone } from './components/View1';
 import { Footer } from './components/Footer';
 import { Arcticle } from './components/Arcticle';
 import { Loder } from './components/Loder';
+import  Combine  from './components/auth/Combine';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Script.js';
 import { Switch, Route } from 'react-router';
@@ -32,8 +33,7 @@ function App() {
       </Route>
       <Route path='/signin'>
         <Loder />
-        <Topnav />
-        <Footer />
+        <Combine/>
       </Route>
     </Switch>
 

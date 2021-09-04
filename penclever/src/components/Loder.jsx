@@ -7,7 +7,7 @@ export const Loder = () => {
         <div>
            <div className="loader">
                <div className="loder"/>
-               <img src={loder} width="150px" height="150px" />
+               <img src={loder} alt="pen" width="150px" height="150px" />
                </div> 
         </div>
     )

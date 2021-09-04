@@ -96,7 +96,6 @@ export class Combine extends Component {
           <LoginForm
             handle_login={this.handle_login}
             display_form={this.display_form}
-            display_form={this.display_form}
             handle_logout={this.handle_logout}
           />
         );
@@ -106,7 +105,6 @@ export class Combine extends Component {
           <SignupForm
             handle_signup={this.handle_signup}
             display_form={this.display_form}
-            display_form={this.display_form}
             handle_logout={this.handle_logout}
           />
         );
@@ -115,7 +113,6 @@ export class Combine extends Component {
         form = (
           <SignupForm
             handle_signup={this.handle_signup}
-            display_form={this.display_form}
             display_form={this.display_form}
             handle_logout={this.handle_logout}
           />
