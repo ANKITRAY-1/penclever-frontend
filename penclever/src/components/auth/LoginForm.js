@@ -19,7 +19,50 @@ class LoginForm extends React.Component {
   render() {
     return (
       <div>
-        <div className="signinwrapper">
+        <div className="login-box">
+          <h2>Login</h2>
+          <form onSubmit={(e) => this.props.handle_login(e, this.state)}>
+            <div className="user-box">
+              <input
+                type="text"
+                id="inputUserame"
+                className="form-control"
+                required
+                autofocus
+                name="username"
+                value={this.state.username}
+                onChange={this.handle_change}
+              />
+              <label htmlFor="username" for="inputUserame">Username</label>
+            </div>
+            <div className="user-box">
+              <input
+                type="password"
+                id="inputPassword"
+                className="form-control"
+                required
+                name="password"
+                value={this.state.password}
+                onChange={this.handle_change}
+              />
+              <label htmlFor="password" for="inputPassword">Password</label>
+            </div>
+            <button type="submit">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              Submit
+            </button>
+          </form>
+          <span
+            className="d-block text-center mt-2 small"
+            onClick={(e) => this.props.display_form("signup")}
+          >
+           Don't have an account? Register
+          </span>
+        </div>
+        {/*<div className="signinwrapper">
           <div className="container">
             <div className="row">
               <div className="col-lg-10 col-xl-9 mx-auto">
@@ -85,7 +128,7 @@ class LoginForm extends React.Component {
               </div>
             </div>
           </div>
-        </div>
+    </div>*/}
       </div>
     );
   }
