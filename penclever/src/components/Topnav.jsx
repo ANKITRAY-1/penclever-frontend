@@ -13,9 +13,15 @@ export const Topnav = () => {
     e.preventDefault();
     var x = document.getElementById("myTopnavx");
     if (x.className === "topnavx") {
-      x.className += " responsive";
-    } else {
+      document.getElementsByClassName("topnavx")[0].style.right = "0";
+    }
+  }
+  function Topnavclose(e) {
+    e.preventDefault();
+    var x = document.getElementById("myTopnavx");
+    if (x.className === "topnavx") {
       x.className = "topnavx";
+      document.getElementsByClassName("topnavx")[0].style.right = "-80%";
     }
   }
   return (
@@ -26,15 +32,18 @@ export const Topnav = () => {
           alt="logo"
           style={{ width: "300px", height: "60px", padding: "0px" }}
         />
-        <div className="header-right">
+        <a href="javascriptvoid(0)" className="iconnav" onClick={Topnav}>
+          &#9776;
+        </a>
+        <a href="javascriptvoid(0)" className="closenav" onClick={Topnavclose}>
+          close
+        </a>
+        <div className="headerright">
           <a href="/signin">Contribute a article today!</a>
         </div>
 
         <div className="topnavx" id="myTopnavx">
-          <a className="activex" href="/">
-            Home
-          </a>
-
+          <a href="/">Home</a>
           <a href="/scince">SCIENCE</a>
           <a href="/technology">TECHNOLOGY</a>
           <a href="/nature">NATURE</a>
@@ -52,13 +61,6 @@ export const Topnav = () => {
               <a href="/#">Link 3</a>
             </div>
           </div>
-          <a
-          href="javascriptvoid(0)"
-          className="icon"
-          onClick={Topnav}
-        >
-          &#9776;
-        </a>
         </div>
       </div>
 
