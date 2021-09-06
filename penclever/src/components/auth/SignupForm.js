@@ -92,6 +92,7 @@ class SignupForm extends React.Component {
               <label>Confirm Password</label>
             </div>
             <button
+            className="btn btn-lg btn-primary btn-block text-uppercase"
               type="submit"
             >
               <span></span>
