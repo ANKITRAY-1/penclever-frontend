@@ -135,10 +135,22 @@ body {
   }
 }
 
+b{
+  padding: 5px;
+  font-size: 25px;
+}
+p{
+  font-size: 20px;
+}
+hr{
+  opacity: 0.7;
+}
+
 .header {
   overflow: hidden;
   background-color: white;
   padding: 10px 0px;
+  z-index: 50;
   box-shadow: 8px;
 }
 
@@ -171,7 +183,8 @@ body {
   .header img {
     float: left;
   }
-
+}
+@media screen and (max-width: 1100px) {
   .headerright {
     float: none;
     display: none;
@@ -261,6 +274,7 @@ body {
   background-color: rgb(255, 255, 255);
   margin: 0px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 1s;
 }
 
 .topnavx a {
@@ -282,11 +296,17 @@ body {
 
 .iconnav {
   display: none;
+  float: right;
+  right: 10px;
+  position: fixed;
 }
 
 .closenav {
+  position: absolute;
+  z-index: -1;
   display: block;
-  display: none;
+  right: 10px;
+  top: 10px;
 }
 
 .dropdownx {
@@ -357,6 +377,9 @@ body {
 
   .topnavx a.icon {
     float: right;
+    display: block;
+  }
+  .iconnav {
     display: block;
   }
 }

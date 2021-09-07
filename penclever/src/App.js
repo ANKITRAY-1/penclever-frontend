@@ -4,6 +4,7 @@ import { Viewone } from './components/View1';
 import { Footer } from './components/Footer';
 import { Arcticle } from './components/Arcticle';
 import { Loder } from './components/Loder';
+import { Userprofile } from './components/Userprofile';
 import  Combine  from './components/auth/Combine';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Script.js';
@@ -34,6 +35,12 @@ function App() {
       <Route path='/signin'>
         <Loder />
         <Combine/>
+      </Route>
+      <Route path='/userprofile'>
+        <Loder/>
+        <Topnav/>
+       <Userprofile/>
+        <Footer/>
       </Route>
     </Switch>
 

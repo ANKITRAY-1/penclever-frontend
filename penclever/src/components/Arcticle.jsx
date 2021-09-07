@@ -6,10 +6,7 @@ import P19 from '../img/19.png'
 import P20 from '../img/20.jpg'
 import P21 from '../img/21.jpg'
 import P22 from '../img/22.jpg'
-import { Facebook } from 'react-bootstrap-icons';
-import { Linkedin } from 'react-bootstrap-icons';
-import { Twitter } from 'react-bootstrap-icons';
-import { Youtube } from 'react-bootstrap-icons';
+import { Facebook,Linkedin,Twitter,Youtube } from 'react-bootstrap-icons';
 
 export const Arcticle = () => {
     return (
@@ -18,7 +15,7 @@ export const Arcticle = () => {
             <Container fluid="true">
                 <div style={{ padding: "10px", }}>
                     <Row>
-                        <Col xl="3" md="6">
+                        <Col xl="3" md="12">
                             <div className="card" style={{ boxShadow: "none", border: "none", }}>
                                 <center> <img src={P19} alt="img" width="100%" /></center>
                                 <h3>Aditya Ray</h3>
