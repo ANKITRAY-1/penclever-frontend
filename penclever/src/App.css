@@ -150,7 +150,6 @@ body {
   }
 }
 
-<<<<<<< Updated upstream
 table {
   vertical-align: middle;
   font-size: 20px;
@@ -161,10 +160,6 @@ th {
   padding: 0px 5px;
 }
 table p {
-=======
-  font-size: 25px;
-}
->>>>>>> Stashed changes
   font-size: 20px;
 }
 hr {
