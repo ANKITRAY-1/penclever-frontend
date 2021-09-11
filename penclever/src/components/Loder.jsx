@@ -1,6 +1,11 @@
 import React from 'react'
 import loder from '../img/loder1.png'
 
+window.addEventListener("load", function () {
+    const loader = document.querySelector(".loader");
+    loader.className += " hidden"; // class "loader hidden"
+});
+
 export const Loder = () => {
     return (
         

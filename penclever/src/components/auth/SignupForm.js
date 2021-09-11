@@ -78,20 +78,9 @@ class SignupForm extends React.Component {
               />
               <label>Password</label>
             </div>
-            <div className="user-box">
-              <input
-                type="password"
-                id="inputconfirmpassword"
-                className="form-control"
-                required
-                autofocus
-                name="confirmpassword"
-                value={this.state.confirmpassword}
-                onChange={this.handle_change}
-              />
-              <label>Confirm Password</label>
-            </div>
+
             <button
+              className="btn btn-lg btn-primary btn-block text-uppercase"
               type="submit"
             >
               <span></span>

@@ -7,9 +7,7 @@ import p2 from "../img/25.jpg";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
-import { HandThumbsUp } from "react-bootstrap-icons";
-import { Chat } from "react-bootstrap-icons";
-import { Share } from "react-bootstrap-icons";
+import { HandThumbsUp, Chat, Share } from "react-bootstrap-icons";
 
 export const Viewone = () => {
   return (
@@ -61,7 +59,7 @@ export const Viewone = () => {
                 <Container>
                   <Row>
                     <Col md={6} style={{ textAlign: "left" }}>
-                      <span style={{ padding: "10px" }}>
+                      <span style={{ padding: "5px" }}>
                         <HandThumbsUp
                           color="grey"
                           size={20}
@@ -69,10 +67,10 @@ export const Viewone = () => {
                         />
                         100
                       </span>
-                      <span style={{ padding: "10px" }}>
+                      <span style={{ padding: "5px" }}>
                         <Chat color="grey" size={20} /> 5
                       </span>
-                      <span style={{ padding: "10px" }}>
+                      <span style={{ padding: "5px" }}>
                         <Share color="grey" size={20} /> 10
                       </span>
                     </Col>
@@ -101,10 +99,29 @@ export const Viewone = () => {
                   <img src={p2} alt="img" width="100%" />
                   <center>
                     <ph>
-                      <h3 style={{ padding: "10px" }}>Understanding The Harmful Effects of Fireworks</h3>
+                      <h3 style={{ padding: "10px" }}>
+                        Understanding The Harmful Effects of Fireworks
+                      </h3>
                     </ph>
                   </center>
                 </a>
+                <Container>
+                  <Row>
+                    <Col md={6} style={{ textAlign: "left" }}>
+                      <span style={{ padding: "5px" }}>
+                        <HandThumbsUp color="grey" size={20} />
+                        100
+                      </span>
+                      <span style={{ padding: "5px" }}>
+                        <Chat color="grey" size={20} /> 5
+                      </span>
+                      <span style={{ padding: "5px" }}>
+                        <Share color="grey" size={20} /> 10
+                      </span>
+                    </Col>
+                    <Col style={{ textAlign: "right" }}>By Aditya Ray</Col>
+                  </Row>
+                </Container>
               </div>
               <div className="card">
                 <Row>
@@ -124,13 +141,34 @@ export const Viewone = () => {
                 >
                   <img src={p1} alt="img" width="100%" />
                   <center>
-                  <ph>
+                    <ph>
                       <h3 style={{ padding: "10px" }}>
                         A look into Nasa's mars 2020 preseverance rover mission.
                       </h3>
                     </ph>
                   </center>
                 </a>
+                <Container>
+                  <Row>
+                    <Col md={6} style={{ textAlign: "left" }}>
+                      <span style={{ padding: "5px" }}>
+                        <HandThumbsUp
+                          color="grey"
+                          size={20}
+                          style={{ padding: "2px " }}
+                        />
+                        100
+                      </span>
+                      <span style={{ padding: "5px" }}>
+                        <Chat color="grey" size={20} /> 5
+                      </span>
+                      <span style={{ padding: "5px" }}>
+                        <Share color="grey" size={20} /> 10
+                      </span>
+                    </Col>
+                    <Col style={{ textAlign: "right" }}>By Aditya Ray</Col>
+                  </Row>
+                </Container>
               </div>
             </Col>
             <Col>
@@ -151,7 +189,7 @@ export const Viewone = () => {
                 </div>
 
                 <div className="cardnext">
-                  <a className="abadab" href=".html">
+                  <a className="abadab" href="/indianspacestation">
                     <img
                       src={p}
                       alt="img"

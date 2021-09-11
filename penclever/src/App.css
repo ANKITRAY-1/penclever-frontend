@@ -41,39 +41,37 @@
 
 @keyframes loder {
   0% {
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      margin: auto;
-      transform: rotateZ(0deg);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    transform: rotateZ(0deg);
   }
 
   50% {
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      margin: auto;
-      transform: rotateZ(3600deg);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    transform: rotateZ(3600deg);
   }
 
   100% {
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      margin: auto;
-      transform: rotateZ(0deg);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    transform: rotateZ(0deg);
   }
-
 }
-
-
 
 body {
   margin: 0px;
   overflow-x: hidden;
+  font-family: "Noto Sans TC", sans-serif;
 }
 
 .abadab {
@@ -85,24 +83,37 @@ body {
   margin-top: 0px;
   display: block;
   overflow: auto;
-  font-size: 15px;
+  font-size: 17px;
   text-align: left;
 }
-.date{
+.date {
   background-color: white;
   opacity: 0.5;
   padding-left: 2px;
   float: right;
 }
-.li{
+.li {
   opacity: 0.5;
   text-align: justify;
   padding-left: 10px;
-  list-style-type:none;
+  list-style-type: none;
 }
 
 
-.catgirise{
+::-webkit-scrollbar {
+  width: 0px;
+}
+::-webkit-scrollbar-track {
+  background: #ffffff; 
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(255, 255, 255); 
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(255, 255, 255); 
+}
+
+.catgirise {
   background-color: red;
   color: #f2f2f2;
   opacity: 0.7;
@@ -110,39 +121,56 @@ body {
   float: left;
   width: fit-content;
 }
-.parastyle{
+.parastyle {
   font-size: 22px;
   color: rgb(73, 73, 73);
   font-family: serif;
   text-align: justify;
 }
 
-.headstyle{
+.headstyle {
   font-size: 40px;
   font-family: serif;
   text-align: justify;
 }
-.arcticlename{
+.arcticlename {
   font-size: 42px;
   font-family: serif;
   text-align: center;
 }
-@media screen and (max-width:600px) {
+@media screen and (max-width: 600px) {
   ph {
-      font-size: 12px;
+    font-size: 12px;
   }
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width: 600px) {
   pc {
-      font-size: 15px;
+    font-size: 15px;
   }
+}
+
+table {
+  vertical-align: middle;
+  font-size: 20px;
+}
+th {
+  font-size: 17px;
+  font-weight: 100;
+  padding: 0px 5px;
+}
+table p {
+  font-size: 20px;
+}
+hr {
+  opacity: 0.7;
 }
 
 .header {
   overflow: hidden;
   background-color: white;
   padding: 10px 0px;
+  z-index: 50;
   box-shadow: 8px;
 }
 
@@ -162,22 +190,24 @@ body {
   color: blue;
 }
 
-.header-right {
+.headerright {
   float: right;
 }
 
 @media screen and (max-width: 500px) {
   .header a {
-      float: none;
-      display: block;
-      text-align: left;
+    float: none;
+    display: block;
+    text-align: left;
   }
-  .header img{
+  .header img {
     float: left;
   }
-
-  .header-right {
-      float: none;
+}
+@media screen and (max-width: 1100px) {
+  .headerright {
+    float: none;
+    display: none;
   }
 }
 
@@ -195,7 +225,7 @@ body {
 }
 
 .cardnext {
-  box-shadow: 0 4px 0px 0 rgba(0, 0, 0, 0.2);
+  color: black;
   background-color: white;
   padding: 0.1px 0px;
   margin-top: 0px;
@@ -215,7 +245,7 @@ body {
 }
 
 #myBtn:hover {
-  background-color: blue;
+  opacity: 0.7;
 }
 
 .gototop {
@@ -238,7 +268,7 @@ body {
   margin: 30px 0px 0px 0px;
   background-color: rgb(0, 0, 0);
 }
-.icon{
+.icon {
   line-height: 60px;
   padding: 15px;
   z-index: 99;
@@ -247,7 +277,7 @@ body {
   color: black;
   padding: 8px 16px;
   text-decoration: none;
-  transition: background-color .3s;
+  transition: background-color 0.3s;
 }
 
 .pagination a.active {
@@ -263,7 +293,8 @@ body {
   overflow: hidden;
   background-color: rgb(255, 255, 255);
   margin: 0px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 1s;
 }
 
 .topnavx a {
@@ -275,15 +306,27 @@ body {
   text-decoration: none;
   font-size: 17px;
   min-width: 10%;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .activex {
   border-bottom: 2px solid rgba(255, 0, 0, 0.603);
 }
 
-.topnavx .icon {
+.iconnav {
   display: none;
+  float: right;
+  right: 10px;
+  position: absolute;
+}
+
+.closenav {
+  position: fixed;
+  z-index: -100;
+  display:none;
+  right: 10px;
+  top: 10px;
 }
 
 .dropdownx {
@@ -318,7 +361,7 @@ body {
   text-decoration: none;
   display: block;
   text-align: left;
-  width: 100%
+  width: 100%;
 }
 
 .topnavx a:hover,
@@ -336,47 +379,28 @@ body {
 }
 
 @media screen and (max-width: 1100px) {
-
-  .topnavx a:not(:first-child),
-  .dropdownx .dropbtnx {
-      display: none;
+  .topnavx {
+    position: fixed;
+    bottom: 0;
+    right: -80%;
+    width: 80%;
+    height: 100%;
+    z-index: 99;
+    text-align: left;
+  }
+  .topnavx a {
+    display: block;
+    float: none;
+    width: 100%;
+    text-align: left;
   }
 
   .topnavx a.icon {
-      float: right;
-      display: block;
+    float: right;
+    display: block;
   }
-}
-
-@media screen and (max-width: 1100px) {
-  .topnavx.responsive {
-      position: relative;
-  }
-
-  .topnavx.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-  }
-
-  .topnavx.responsive a {
-      float: none;
-      display: block;
-      text-align: center;
-  }
-
-  .topnavx.responsive .dropdownx {
-      float: none;
-  }
-
-  .topnavx.responsive .dropdownx-contentx {
-      position: relative;
-  }
-
-  .topnavx.responsive .dropdownx .dropbtnx {
-      display: block;
-      width: 100%;
-      text-align: center;
+  .iconnav {
+    display: block;
   }
 }
 
@@ -390,57 +414,57 @@ body {
   filter: grayscale(100%);
 }
 
-@media screen and (max-width:1233px) {
+@media screen and (max-width: 1233px) {
   .parallax {
-      min-height: 305px;
+    min-height: 305px;
   }
 }
 
-@media screen and (max-width:1013px) {
+@media screen and (max-width: 1013px) {
   .parallax {
-      min-height: 329px;
+    min-height: 329px;
   }
 }
 
-@media screen and (max-width:870px) {
+@media screen and (max-width: 870px) {
   .parallax {
-      min-height: 353px;
+    min-height: 353px;
   }
 }
 
-@media screen and (max-width:765px) {
+@media screen and (max-width: 765px) {
   .parallax {
-      min-height: 385px;
+    min-height: 385px;
   }
 }
 
-@media screen and (max-width:732px) {
+@media screen and (max-width: 732px) {
   .parallax {
-      min-height: 409px;
+    min-height: 409px;
   }
 }
 
-@media screen and (max-width:662px) {
+@media screen and (max-width: 662px) {
   .parallax {
-      min-height: 433px;
+    min-height: 433px;
   }
 }
 
-@media screen and (max-width:582px) {
+@media screen and (max-width: 582px) {
   .parallax {
-      min-height: 457px;
+    min-height: 457px;
   }
 }
 
-@media screen and (max-width:540px) {
+@media screen and (max-width: 540px) {
   .parallax {
-      min-height: 481px;
+    min-height: 481px;
   }
 }
 
-@media screen and (max-width:300px) {
+@media screen and (max-width: 300px) {
   .parallax {
-      min-height: 600px;
+    min-height: 600px;
   }
 }
 
@@ -477,13 +501,13 @@ p2 {
 
 @media screen and (max-width: 500px) {
   p1 {
-      font-size: 20px;
+    font-size: 20px;
   }
 }
 
 @media screen and (max-width: 500px) {
   p2 {
-      font-size: 20px;
+    font-size: 20px;
   }
 }
 
@@ -506,13 +530,12 @@ p2 {
 }
 
 @media screen and (max-width: 500px) {
-
   .parabutton,
   .parabutton a {
-      font-size: 20px;
-      padding: 14px 16px;
-      width: 400px;
-      margin: 0px;
+    font-size: 20px;
+    padding: 14px 16px;
+    width: 400px;
+    margin: 0px;
   }
 }
 
@@ -523,7 +546,7 @@ p3 {
 
 @media screen and (max-width: 500px) {
   p3 {
-      font-size: 25px;
+    font-size: 25px;
   }
 }
 
@@ -540,7 +563,7 @@ img.a {
   transform: translate(-50%, -50%);
   background: rgb(255, 255, 255);
   box-sizing: border-box;
-  box-shadow: 0 30px 30px rgba(0,0,0,.6);
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
 }
 
@@ -568,13 +591,13 @@ img.a {
 }
 .login-box .user-box label {
   position: absolute;
-  top:0;
+  top: 0;
   left: 0;
   padding: 10px 0;
   font-size: 16px;
   color: rgb(0, 0, 0);
   pointer-events: none;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .login-box .user-box input:focus ~ label,
@@ -596,19 +619,17 @@ img.a {
   text-decoration: none;
   text-transform: uppercase;
   overflow: hidden;
-  transition: .5s;
+  transition: 0.5s;
   margin-top: 40px;
-  letter-spacing: 4px
+  letter-spacing: 4px;
 }
 
 .login-box button:hover {
   background: #ff4e4e;
   color: #fff;
   border-radius: 5px;
-  box-shadow: 0 0 5px #ff4e4e,
-              0 0 25px #ff4e4e,
-              0 0 50px #ff4e4e,
-              0 0 100px #ff4e4e;
+  box-shadow: 0 0 5px #ff4e4e, 0 0 25px #ff4e4e, 0 0 50px #ff4e4e,
+    0 0 100px #ff4e4e;
 }
 
 .login-box button span {
@@ -629,7 +650,8 @@ img.a {
   0% {
     left: -100%;
   }
-  50%,100% {
+  50%,
+  100% {
     left: 100%;
   }
 }
@@ -641,14 +663,15 @@ img.a {
   height: 100%;
   background: linear-gradient(180deg, transparent, #ff4e4e);
   animation: btn-anim2 1s linear infinite;
-  animation-delay: .25s
+  animation-delay: 0.25s;
 }
 
 @keyframes btn-anim2 {
   0% {
     top: -100%;
   }
-  50%,100% {
+  50%,
+  100% {
     top: 100%;
   }
 }
@@ -660,14 +683,15 @@ img.a {
   height: 2px;
   background: linear-gradient(270deg, transparent, #ff4e4e);
   animation: btn-anim3 1s linear infinite;
-  animation-delay: .5s
+  animation-delay: 0.5s;
 }
 
 @keyframes btn-anim3 {
   0% {
     right: -100%;
   }
-  50%,100% {
+  50%,
+  100% {
     right: 100%;
   }
 }
@@ -679,15 +703,15 @@ img.a {
   height: 100%;
   background: linear-gradient(360deg, transparent, #ff4e4e);
   animation: btn-anim4 1s linear infinite;
-  animation-delay: .75s
+  animation-delay: 0.75s;
 }
 
 @keyframes btn-anim4 {
   0% {
     bottom: -100%;
   }
-  50%,100% {
+  50%,
+  100% {
     bottom: 100%;
   }
 }
-
