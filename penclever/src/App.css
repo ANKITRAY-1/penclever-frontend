@@ -70,8 +70,9 @@
 
 body {
   margin: 0px;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   font-family: "Noto Sans TC", sans-serif;
+  background-color: #f2f2f2 !important;
 }
 
 .abadab {
@@ -99,20 +100,20 @@ body {
   list-style-type: none;
 }
 
-
-::-webkit-scrollbar {
-  width: 0px;
+@media screen and (max-width: 600px) {
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgb(255, 255, 255);
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(255, 255, 255);
+  }
 }
-::-webkit-scrollbar-track {
-  background: #ffffff; 
-}
-::-webkit-scrollbar-thumb {
-  background: rgb(255, 255, 255); 
-}
-::-webkit-scrollbar-thumb:hover {
-  background: rgb(255, 255, 255); 
-}
-
 .catgirise {
   background-color: red;
   color: #f2f2f2;
@@ -324,7 +325,7 @@ hr {
 .closenav {
   position: fixed;
   z-index: -100;
-  display:none;
+  display: none;
   right: 10px;
   top: 10px;
 }
