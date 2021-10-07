@@ -3,12 +3,16 @@ import { XCircle,List } from "react-bootstrap-icons";
 import logo from "../img/logo1.png";
 
 export const Topnav = () => {
+  window.addEventListener("load", function () {
+    document.getElementsByClassName("closenav")[0].style.display = "none";
+});
   function Topnav(e) {
     e.preventDefault();
     var x = document.getElementById("myTopnavx");
     if (x.className === "topnavx") {
       document.getElementsByClassName("topnavx")[0].style.right = "0";
       document.getElementsByClassName("closenav")[0].style.zIndex = "101";
+      document.getElementsByClassName("closenav")[0].style.display = "block";
     }
   }
   function Topnavclose(e) {
@@ -17,7 +21,7 @@ export const Topnav = () => {
     if (x.className === "topnavx") {
       x.className = "topnavx";
       document.getElementsByClassName("topnavx")[0].style.right = "-80%";
-      document.getElementsByClassName("closenav")[0].style.zIndex = "-1";
+      document.getElementsByClassName("closenav")[0].style.display = "none";
     }
   }
   return (

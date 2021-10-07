@@ -5,7 +5,7 @@ export const Sidegraph = () => {
   return (
     <div>
       <Chart
-        width={"600px"}
+        width={"auto"}
         height={"400px"}
         chartType="PieChart"
         loader={<div>Loading Chart</div>}

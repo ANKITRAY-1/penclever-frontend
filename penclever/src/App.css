@@ -326,7 +326,7 @@ hr {
 .closenav {
   position: fixed;
   z-index: -100;
-  display: none;
+  display: none !;
   right: 10px;
   top: 10px;
 }
