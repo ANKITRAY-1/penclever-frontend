@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+/*import React, { Component } from "react";
 import CKEditor from "@ckeditor/ckeditor5-react";
 import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
 
@@ -24,4 +24,4 @@ class Editor extends Component {
   }
 }
 
-export default Editor;
+export default Editor;*/

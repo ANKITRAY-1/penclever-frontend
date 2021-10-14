@@ -5,7 +5,7 @@ import { Facebook, Linkedin, Twitter, Youtube } from "react-bootstrap-icons";
 export const Profilecard = () => {
   return (
     <div>
-      <div className="card">
+      <div className="card2">
         <center>
           {" "}
           <a href="/userprofile">

@@ -2,9 +2,10 @@ import React from "react";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
+import { Sidegraph } from "./Sidegraph";
+import { Maingraph } from "./Maingraph";
 import { Profilecard } from "./Profilecard";
-import { Userinfo } from "./Userinfo";
-import { Stats } from "./Stats";
+import { Profile } from "./Profile";
 
 export const Userprofile = () => {
   return (
@@ -12,14 +13,21 @@ export const Userprofile = () => {
       <Container fluid="true" style={{ padding: "10px" }}>
         <Row>
           <Col md="6" xl="3">
-            <Profilecard />
+            <Profilecard/>
           </Col>
+          <Col md="6" xl="5">
+            <Profile/>
+          </Col>
+        </Row>
+      </Container>
 
-          <Col md="6"  xl="3">
-          <Stats/>
+      <Container fluid="true" style={{ padding: "10px" }}>
+        <Row>
+          <Col md="6" xl="7">
+            <Maingraph />
           </Col>
-          <Col md="6"  xl="3">
-          <Userinfo/>
+          <Col md="6" xl="5">
+            <Sidegraph />
           </Col>
         </Row>
       </Container>
