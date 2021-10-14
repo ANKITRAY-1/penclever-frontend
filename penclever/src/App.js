@@ -38,14 +38,13 @@ function App() {
       </Route>
       <Route path="/userprofile">
         <Loder />
-        <Topnav />
+        {/* <Topnav /> */}
         <Userprofile />
-        <Footer />
       </Route>
       <Route path="/editor">
         <Loder />
         <Topnav />
-       {/*<Editor />*/}
+        {/*<Editor />*/}
         <Footer />
       </Route>
     </Switch>
