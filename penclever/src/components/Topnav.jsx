@@ -56,7 +56,7 @@ export const Topnav = () => {
           <div className="dropdownx">
             <button className="dropbtnx">MORE</button>
             <div className="dropdownx-contentx">
-              <a href="/Miscellaneous.html">MORE</a>
+              <a href="/miscellaneous">MISCELLANEOUS</a>
               <a href="/userprofile">Profile</a>
               <a href="/signin">Signin</a>
             </div>
