@@ -895,3 +895,54 @@ img {
 .activity {
   width: 100%;
 }
+
+.edit_title {
+  background: #ffffff00;
+  color: #ffffff;
+  outline: none;
+  border: none;
+  font-size: 40px;
+  width: 100%;
+  font-weight: 600;
+  display: block;
+  overflow: hidden;
+  resize: none;
+}
+.edit_content {
+  background: #ffffff00;
+  color: #ffffff;
+  outline: none;
+  border: none;
+  font-size: 17px;
+  width: 100%;
+  font-weight: 400;
+
+  display: block;
+  overflow: hidden;
+  resize: none;
+}
+
+.edit_title::placeholder {
+  color: rgba(255, 255, 255, 0.76);
+}
+
+.edit_content::placeholder {
+  color: rgba(255, 255, 255, 0.76);
+}
+
+.toolbar {
+  position: absolute;
+  display: none;
+  background: #000000ec;
+  padding: 20px;
+  color: white;
+  font-size: 20px;
+}
+
+#share-snippet {
+  background: #000000ec;
+  padding: 20px;
+  color: white;
+  font-size: 20px;
+  border-radius: 5px;
+}

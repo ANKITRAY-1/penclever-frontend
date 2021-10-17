@@ -9,7 +9,7 @@ import Combine from "./components/auth/Combine";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Script.js";
 import { Switch, Route } from "react-router";
-/* import Editor from "./components/Editor"; */
+import { Editor } from "./components/Editor";
 function App() {
   return (
     <Switch>
@@ -43,9 +43,9 @@ function App() {
       </Route>
       <Route path="/editor">
         <Loder />
-        <Topnav />
-        {/*<Editor />*/}
-        <Footer />
+        {/* <Topnav /> */}
+        <Editor />
+        {/* <Footer /> */}
       </Route>
     </Switch>
   );
