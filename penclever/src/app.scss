@@ -204,7 +204,6 @@ img {
   }
 }
 
-
 .search-bar {
   height: 40px;
   display: flex;
@@ -885,8 +884,8 @@ img {
 }
 
 .edit_title {
-  background: #ffffff00;
-  color: #ffffff;
+  background: #e6868600;
+  color: rgb(255, 255, 255);
   outline: none;
   border: none;
   font-size: 40px;
@@ -898,13 +897,13 @@ img {
 }
 .edit_content {
   background: #ffffff00;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.95);
   outline: none;
   border: none;
   font-size: 17px;
   width: 100%;
   font-weight: 400;
-
+  padding-bottom: 200px;
   display: block;
   overflow: hidden;
   resize: none;
@@ -923,14 +922,23 @@ img {
   display: none;
   background: #000000ec;
   padding: 20px;
-  color: white;
+  color: rgba(255, 255, 255, 0.8);
   font-size: 20px;
 }
 
 #share-snippet {
   background: #000000ec;
-  padding: 20px;
+  padding: 7px 20px;
   color: white;
   font-size: 20px;
   border-radius: 5px;
+}
+
+.toolbtn {
+  border: none;
+  outline: none;
+  background: none;
+  color: white;
+  font-weight: 600;
+  padding: 0px 13px;
 }
