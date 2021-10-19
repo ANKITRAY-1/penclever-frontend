@@ -606,9 +606,7 @@ img.a {
   min-width: 10%;
 }
 
-.search {
-  display: none;
-}
+
 @media screen and (max-width: 500px) {
   .header a {
     float: none;
@@ -619,6 +617,12 @@ img.a {
     float: left;
   }
 }
+.search {
+  display: none;
+}
+.search1 {
+  display: block;
+}
 @media screen and (max-width: 1100px) {
   .headerright {
     float: none;
@@ -626,6 +630,9 @@ img.a {
   }
   .search {
     display: block;
+  }
+  .search1 {
+    display: none;
   }
 }
 

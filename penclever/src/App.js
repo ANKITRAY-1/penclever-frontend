@@ -10,6 +10,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./Script.js";
 import { Switch, Route } from "react-router";
 import { Editor } from "./components/Editor";
+import PageNotFound from './components/404 error'
 function App() {
   return (
     <Switch>
@@ -47,6 +48,7 @@ function App() {
         <Editor />
         {/* <Footer /> */}
       </Route>
+      <Route component={PageNotFound} />
     </Switch>
   );
 }

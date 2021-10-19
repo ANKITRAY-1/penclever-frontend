@@ -1,11 +1,11 @@
 import React from "react";
-import { XCircle,List, Search } from "react-bootstrap-icons";
+import { XCircle, List, Search } from "react-bootstrap-icons";
 import logo from "../img/logo1.png";
 
 export const Topnav = () => {
   window.addEventListener("load", function () {
     document.getElementsByClassName("closenav")[0].style.display = "none";
-});
+  });
   function Topnav(e) {
     e.preventDefault();
     var x = document.getElementById("myTopnavx");
@@ -39,18 +39,18 @@ export const Topnav = () => {
           <XCircle size={30} color="blue" />
         </a>
         <div className="headerright">
-          <a href="/"> <Search/><input type="text" name="search" placeholder="Search.." style={{border:"none"}} /></a>
+          <a href="/"> <Search /><input type="text" name="search" placeholder="Search.." style={{ border: "none" }} /></a>
           <a href="/signin">Signin</a>
           <a href="/">Home</a>
         </div>
 
         <div className="topnavx" id="myTopnavx">
-        <div className="search">
-          <p style={{padding:"10px 16px", fontSize:"20px"}}>Quick Links</p>
-          <a href="/">Home</a>
-          <a href="/signin">Signin</a>
-          <p style={{padding:"10px 16px", fontSize:"20px"}}>Quick Links</p>
-        </div>
+          <div className="search">
+            <p style={{ padding: "10px 16px", fontSize: "20px" }}>Quick Links</p>
+            <a href="/">Home</a>
+            <a href="/signin">Signin</a>
+            <p style={{ padding: "10px 16px", fontSize: "20px" }}>Categories</p>
+          </div>
           <a href="/scince">SCIENCE</a>
           <a href="/technology">TECHNOLOGY</a>
           <a href="/nature">NATURE</a>
