@@ -1,16 +1,16 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { Link45deg } from "react-bootstrap-icons";
+
 import "../app.scss";
 import { Darkbtn } from "./Darkbtn";
 import { Header } from "./Header";
 import { Sidebar } from "./Sidebar";
 export const Editor = () => {
-  const [author, setAuthor] = useState("author");
+  const [author ] = useState("author");
   const [title, setTitle] = useState("");
   const [content, setContent] = useState();
   const [tags, setTags] = useState("");
-  const [bold, setBold] = useState(false);
+  const [ setBold] = useState(false);
 
   useEffect(() => {
     var textarea = document.querySelector("#autoresizing");
