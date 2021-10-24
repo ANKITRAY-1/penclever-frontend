@@ -4,7 +4,7 @@ const PageNotFound = () => {
 
     return (
 
-        <section className="wrapper">
+        <section className="wrapper1">
 
             <div className="container">
 
