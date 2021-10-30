@@ -5,6 +5,7 @@ import { Footer } from "./components/Footer";
 import { Arcticle } from "./components/Arcticle";
 import { Loder } from "./components/Loder";
 import { Userprofile } from "./components/Userprofile";
+import { Stats } from "./components/Stats";
 import Combine from "./components/auth/Combine";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Script.js";
@@ -41,6 +42,10 @@ function App() {
         <Loder />
         {/* <Topnav /> */}
         <Userprofile />
+      </Route>
+      <Route path="/stats">
+        <Loder />
+        <Stats/>
       </Route>
       <Route path="/editor">
         <Loder />
