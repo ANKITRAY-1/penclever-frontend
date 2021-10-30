@@ -10,7 +10,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./Script.js";
 import { Switch, Route } from "react-router";
 import { Editor } from "./components/Editor";
-import PageNotFound from './components/404 error'
+import PageNotFound from "./components/Error404";
 function App() {
   return (
     <Switch>
