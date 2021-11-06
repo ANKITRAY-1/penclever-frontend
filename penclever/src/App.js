@@ -10,6 +10,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./Script.js";
 import { Switch, Route } from "react-router";
 import { Editor } from "./components/Editor";
+import Tedit from "./components/Tedit.jsx";
 import PageNotFound from "./components/Error404";
 function App() {
   return (
@@ -46,7 +47,12 @@ function App() {
         <Loder />
         {/* <Topnav /> */}
         <Editor />
+
         {/* <Footer /> */}
+      </Route>
+      <Route path="/tedit">
+        <Loder />
+        <Tedit />
       </Route>
       <Route component={PageNotFound} />
     </Switch>

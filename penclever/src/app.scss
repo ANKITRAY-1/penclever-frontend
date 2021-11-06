@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
-
+blockquote {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 40px !important;
+  margin-right: 40px;
+}
 * {
   outline: none;
   box-sizing: border-box;
@@ -941,6 +947,11 @@ img {
   color: white;
   font-weight: 600;
   padding: 0px 13px;
+  border-radius: 7px;
+}
+
+.toolbtn:hover {
+  background: rgba(255, 255, 255, 0.288);
 }
 
 /* 404 error*/
@@ -1689,4 +1700,66 @@ nav {
       }
     }
   }
+}
+
+#autoresizing a {
+  cursor: pointer;
+}
+
+.tags input[type="text"] {
+  background: none;
+  color: rgb(255, 255, 255);
+}
+.tags {
+  background: rgba(7, 1, 39, 0.795);
+  backdrop-filter: blur(2px);
+  max-width: 400px;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.submit input[type="submit"] {
+  background: rgba(7, 1, 39, 0.795);
+  backdrop-filter: blur(2px);
+  padding: 10px;
+  border-radius: 20px;
+  float: right;
+}
+
+body {
+  background: #33f133;
+  font-family: sans-serif;
+}
+
+.app {
+  margin: 1rem 4rem;
+}
+
+.app .ql-container {
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+  background: transparent;
+}
+
+/* Snow Theme */
+.app .ql-snow.ql-toolbar {
+  display: block;
+  background: #eaecec;
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+}
+
+/* Bubble Theme */
+.app .ql-bubble .ql-editor {
+  border: 1px solid #ccc;
+  border-radius: 0.5em;
+}
+
+.app .ql-editor {
+  min-height: 18em;
+}
+
+.themeSwitcher {
+  margin-top: 0.5em;
+  font-size: small;
 }
