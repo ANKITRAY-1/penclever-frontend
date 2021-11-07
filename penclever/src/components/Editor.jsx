@@ -102,7 +102,7 @@ export const Editor = () => {
           nod.outerHTML = nod.innerHTML;
         } else {
           span.innerHTML = span.innerText.replace(/<i>/g, "");
-          span.innerHTML = span.innerText.replace(/<\/i\>/g, "");
+          span.innerHTML = span.innerText.replace(/<\/i/g, "");
         }
       };
       document.getElementById("hyperlink").onclick = function () {
@@ -123,7 +123,7 @@ export const Editor = () => {
           nod.outerHTML = nod.innerHTML;
         } else {
           span.innerHTML = span.innerText.replace(/<a>/g, "");
-          span.innerHTML = span.innerText.replace(/<\/a\>/g, "");
+          span.innerHTML = span.innerText.replace(/<\/a/g, "");
         }
       };
       document.getElementById("title").onclick = function () {
@@ -139,7 +139,7 @@ export const Editor = () => {
           nod.outerHTML = nod.innerHTML;
         } else {
           span.innerHTML = span.innerText.replace(/<h3>/g, "");
-          span.innerHTML = span.innerText.replace(/<\/h3\>/g, "");
+          span.innerHTML = span.innerText.replace(/<\/h3/g, "");
         }
       };
       // document.getElementById("code").onclick = function () {
@@ -163,7 +163,7 @@ export const Editor = () => {
           nod.outerHTML = nod.innerHTML;
         } else {
           span.innerHTML = span.innerText.replace(/<blockquote>/g, "");
-          span.innerHTML = span.innerText.replace(/<\/blockquote\>/g, "");
+          span.innerHTML = span.innerText.replace(/<\/blockquote/g, "");
         }
       };
     }
