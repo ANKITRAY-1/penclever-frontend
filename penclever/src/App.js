@@ -40,18 +40,15 @@ function App() {
       </Route>
       <Route path="/userprofile">
         <Loder />
-        {/* <Topnav /> */}
         <Userprofile />
       </Route>
       <Route path="/stats">
         <Loder />
-        <Stats/>
+        <Stats />
       </Route>
       <Route path="/editor">
         <Loder />
-        {/* <Topnav /> */}
         <Editor />
-        {/* <Footer /> */}
       </Route>
       <Route component={PageNotFound} />
     </Switch>
